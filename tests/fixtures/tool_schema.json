@@ -1,0 +1,38 @@
+{
+  "cache_status": [],
+  "matricula_page_image": [
+    "destination",
+    "page",
+    "register"
+  ],
+  "matricula_parishes": [
+    "count",
+    "query",
+    "refresh",
+    "section"
+  ],
+  "matricula_register": [
+    "count",
+    "first",
+    "label_contains",
+    "refresh",
+    "register"
+  ],
+  "matricula_registers": [
+    "kind",
+    "parish",
+    "refresh"
+  ],
+  "matricula_search": [
+    "count",
+    "from_year",
+    "place",
+    "refresh",
+    "section",
+    "to_year"
+  ],
+  "matricula_sections": [
+    "country",
+    "refresh"
+  ]
+}

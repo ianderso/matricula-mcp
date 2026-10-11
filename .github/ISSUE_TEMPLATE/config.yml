@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Report a security vulnerability
+    url: https://github.com/ianderso/matricula-mcp/security/advisories/new
+    about: Privately, not in a public issue. See SECURITY.md.
+  - name: A problem with Matricula itself or its registers
+    url: https://icar-us.eu/en/cooperation/online-portals/matricula/contact/
+    about: This project does not operate Matricula. Outages and wrong descriptions go to ICARUS or to the archive that publishes the register.

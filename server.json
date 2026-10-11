@@ -1,0 +1,57 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.ianderso/matricula-mcp",
+  "title": "Matricula Church Books",
+  "description": "Find parishes and registers on Matricula, the church-book portal; open any page in its viewer.",
+  "repository": {
+    "url": "https://github.com/ianderso/matricula-mcp",
+    "source": "github"
+  },
+  "version": "0.1.0",
+  "packages": [
+    {
+      "registryType": "pypi",
+      "registryBaseUrl": "https://pypi.org",
+      "identifier": "matricula-mcp",
+      "version": "0.1.0",
+      "runtimeHint": "uvx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "MATRICULA_CACHE_DIR",
+          "description": "Directory for the on-disk response cache.",
+          "default": "~/.cache/matricula-mcp"
+        },
+        {
+          "name": "MATRICULA_TIMEOUT",
+          "description": "HTTP timeout in seconds for one request. Image downloads get 120 s to read.",
+          "default": "30"
+        },
+        {
+          "name": "MATRICULA_MIN_INTERVAL",
+          "description": "Least seconds between two requests to Matricula. Never below 2.",
+          "default": "2"
+        },
+        {
+          "name": "MATRICULA_SEARCH_INTERVAL",
+          "description": "Least seconds between two place searches. Never below 10.",
+          "default": "10"
+        },
+        {
+          "name": "MATRICULA_CONTACT",
+          "description": "An email address or URL appended to the User-Agent, so ICARUS can reach whoever runs the server."
+        },
+        {
+          "name": "MATRICULA_DOWNLOAD_DIR",
+          "description": "An existing folder. When set, matricula_page_image saves only inside it; needed to save under ~/Library, such as an iCloud Drive folder."
+        },
+        {
+          "name": "MATRICULA_IMAGE_ACCESS",
+          "description": "Leave unset: page images are not fetched. Set to 'granted' only once ICARUS has granted this client access to its image host; needs MATRICULA_CONTACT."
+        }
+      ]
+    }
+  ]
+}
